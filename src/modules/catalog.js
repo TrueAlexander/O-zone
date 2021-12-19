@@ -7,8 +7,9 @@ const catalog = () => {
   const catalogModal = document.querySelector('.catalog');
   const catalogModalItems = document.querySelectorAll('.catalog li');
 
-
   let isOpen = false;
+
+  //open / close Catalog modal window
 
   btnCatalog.addEventListener('click', () => {
     isOpen = !isOpen;

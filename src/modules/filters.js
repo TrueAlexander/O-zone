@@ -12,3 +12,20 @@ export const categoryFilter = (goods, value) => {
   });
 };
 
+/// min price search
+
+export const minPriceFilter = (goods, minValue) => {
+
+  return goods.filter((goodsItem) => {
+    return goodsItem.price >= minValue;
+  });
+};
+
+/// max price search
+
+export const maxPriceFilter = (goods, maxValue) => {
+
+  return goods.filter((goodsItem) => {
+    return goodsItem.price <= maxValue;
+  });
+};
